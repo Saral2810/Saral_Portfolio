@@ -7,7 +7,7 @@ export const profile = {
   name: "Saral Singhal",
   role: "Data & Strategy",
   tagline:
-  "Final-year Computer Science student at VIT Bhopal with a growing focus on **data analytics and technology consulting** — currently working on PPP and feasibility studies at Deloitte, leveraging Power BI and DAX for public-sector analytics, while exploring machine learning and applied data science.",
+  "Final-year Computer Science student at VIT Bhopal with a growing focus on data analytics and technology consulting — currently working on PPP and feasibility studies at Deloitte, leveraging Power BI and DAX for public-sector analytics, while exploring machine learning and applied data science.",
   location: "Jaipur/ Rajasthan, India",
   email: "saralsinghal2810@gmail.com",
   phone: "+91 80009 38425",
