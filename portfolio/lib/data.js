@@ -7,7 +7,7 @@ export const profile = {
   name: "Saral Singhal",
   role: "Data & Strategy",
   tagline:
-    "Computer Science student at VIT Bhopal working where infrastructure policy meets data — PPP and data-centre feasibility at Deloitte, Power BI and DAX for public-sector reporting, and machine learning for medical imaging on my own time.",
+  "Final-year Computer Science student at VIT Bhopal with a growing focus on **data analytics and technology consulting** — currently working on PPP and feasibility studies at Deloitte, leveraging Power BI and DAX for public-sector analytics, while exploring machine learning and applied data science.",
   location: "Jaipur/ Rajasthan, India",
   email: "saralsinghal2810@gmail.com",
   phone: "+91 80009 38425",
@@ -26,12 +26,14 @@ export const profile = {
   },
   // About-page narrative. Plain paragraphs; edit freely.
   about: [
-    "I'm a Computer Science and Engineering student at Vellore Institute of Technology, Bhopal, graduating in 2027. My route into engineering started with a simple pull toward problems that have a right answer hiding in the details — and data turned out to be where that instinct fits best.",
-    "Over time that interest narrowed into something specific: turning messy, real-world information into decisions people can act on. Whether it's a highway asset register, a metro's revenue streams, or a set of endoscopy images, the work I enjoy most is the same — cleaning, modelling and shaping data until a clear story falls out of it.",
-    "I've been fortunate to test that in industry early. At Deloitte I worked on data-centre feasibility and built Power BI analytics for public-infrastructure bids; at Ernst & Young I quantified revenue streams for Chennai Metro Rail and mapped highway assets through GIS. Alongside consulting, I build on my own time — from a deep-learning system for medical imaging to a from-scratch data pipeline — because the fastest way I learn is by making the thing work end to end.",
+  "My academic journey began in the sciences. Studying biology in high school sparked a curiosity about healthcare that I wanted to explore through a technological lens. This led me to pursue a B.Tech in Computer Science and Engineering with a specialization in Health Informatics at Vellore Institute of Technology, Bhopal (Class of 2027).",
+  "Once at university, I cast a wide net—exploring app development, cybersecurity, AI/ML, and data science. I quickly discovered a simple pull toward problems that have a right answer hidden in the details, and data turned out to be where that instinct fits best. I was fascinated by the way numbers can answer complex questions and how models learn patterns to drive business decisions.",
+  "I decided to merge my biology roots with my growing technical stack by developing WCEBleedGen, a deep-learning system for Wireless Capsule Endoscopy. The model helps surgeons differentiate between bleeding and non-bleeding images, achieving a novel 97% accuracy rate. With my professor's encouragement, I authored a paper on this architecture, which was published at ICNACT 2026.",
+  "Alongside academic research, I have been fortunate to test my skills in the industry early on. I completed consulting internships at Deloitte and Ernst & Young (EY), working within Public-Private Partnerships (PPP) for Real Estate and Infrastructure Advisory. At Deloitte, I worked on data-center feasibility and built Power BI analytics for public-infrastructure bids. At EY, I quantified revenue streams for the Chennai Metro Rail and mapped highway assets using GIS. These experiences gave me a front-row seat to large-scale infrastructure development and the mechanics of government advisory.",
+
   ],
   vision:
-    "By 40, I want to be the person organisations trust to turn tangled data into the decision that moves them forward — and to have trained a generation of analysts who do the same.",
+    "Today, my vision is simple: to improve in the data domain every single day. Whether it is a highway asset register, a metro's revenue streams, or a set of medical images, the work I enjoy most remains the same—cleaning, modeling, and shaping messy, real-world information until a clear story emerges.",
 };
 
 export const marquee = [
