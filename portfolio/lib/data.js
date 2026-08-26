@@ -7,7 +7,7 @@ export const profile = {
   name: "Saral Singhal",
   role: "Strategy & Data Science",
   tagline:
-    "Computer Science undergraduate working where infrastructure policy meets machine learning — PPP and data-centre research at Deloitte, deep learning for medical imaging on my own time.",
+    "Computer Science undergraduate working where infrastructure policy meets data — PPP and data-centre feasibility at Deloitte, Power BI and DAX for public-sector reporting, and machine learning for medical imaging on my own time.",
   location: "Gurugram / Delhi, India",
   email: "saralsinghal2810@gmail.com",
   phone: "+91 80009 38425",
@@ -17,9 +17,9 @@ export const profile = {
   education: {
     school: "Vellore Institute of Technology",
     campus: "Bhopal, Madhya Pradesh",
-    degree: "B.Tech, Computer Science",
+    degree: "B.Tech, Computer Science & Engineering",
     span: "2023 – 2027",
-    cgpa: "8.4 / 10",
+    cgpa: "8.42 / 10",
   },
 };
 
@@ -28,7 +28,7 @@ export const marquee = [
   { value: "0.812", label: "Dice coefficient", note: "DMP-WCEBleedNet segmentation" },
   { value: "98.31%", label: "Classification accuracy", note: "Bleeding detection, test set" },
   { value: "2", label: "Consulting internships", note: "Deloitte · Ernst & Young" },
-  { value: "8.4", label: "CGPA / 10", note: "VIT Bhopal, CSE" },
+  { value: "8.42", label: "CGPA / 10", note: "VIT Bhopal, CSE" },
 ];
 
 export const experience = [
@@ -38,31 +38,35 @@ export const experience = [
     team: "Strategy, Risk & Transactions",
     title: "Intern",
     location: "Gurugram, India",
-    span: "May 2026 – Present",
-    period: "Current",
+    span: "May 2026 – August 2026",
+    period: "Recent",
     summary:
-      "Research and analysis on public-private partnership models and data-centre infrastructure in India, plus a Power BI review layer for the government asset-monetisation pipeline.",
+      "Feasibility work on a Tier III data-centre PPP, a Power BI bid-compliance analytics tool scoring bidders against a tender checklist, and the reporting layer for a government asset-registration system.",
     contributions: [
       {
-        heading: "Report building",
-        body: "Developed research and analytical studies on Public-Private Partnership (PPP) models and data centre infrastructure development in India.",
+        heading: "Feasibility study",
+        body: "Contributed to the feasibility study for a 10 MW Tier III data centre in India under a public-private partnership (PPP) model, covering demand assessment, site and infrastructure requirements and a 20-year operating case.",
       },
       {
-        heading: "Asset review system",
-        body: "Built a Power BI dashboard for the Asset Registration System under the Asset Monetization Pipeline, enabling seamless and efficient review of resources.",
+        heading: "Bid compliance analytics",
+        body: "Designed a Power BI dashboard on a star-schema data model with custom DAX measures to score 19 bidders against a 32-point NHAI tender checklist, replacing a manual document-by-document review process.",
+      },
+      {
+        heading: "Asset monetisation reporting",
+        body: "Developed the reporting layer for the Asset Registration System, consolidating dispersed highway asset records into review-ready dashboards for stakeholder sign-off.",
       },
     ],
-    stack: ["Power BI", "Advanced Excel", "Secondary research", "PPP frameworks"],
+    stack: ["Power BI", "DAX", "Star-schema modelling", "PPP frameworks", "Secondary research"],
     // ← EDIT: drop images into /public/exhibits/ and update src + caption + source.
     exhibits: [
       {
         src: "/exhibits/deloitte-1.svg",
-        caption: "Asset Registration System dashboard, Power BI",
+        caption: "Bid-compliance analytics dashboard, Power BI",
         source: "Deloitte, Strategy Risk & Transactions, 2026",
       },
       {
         src: "/exhibits/deloitte-2.svg",
-        caption: "PPP and data-centre infrastructure study — extract",
+        caption: "Tier III data-centre feasibility study — extract",
         source: "Deloitte, 2026",
       },
       {
@@ -84,16 +88,16 @@ export const experience = [
       "Non-fare-box revenue assessment for Chennai Metro Rail, a functional spec for automating vendor revenue collection, and GIS asset mapping across two state highway networks.",
     contributions: [
       {
-        heading: "Market analysis",
-        body: "Performed a detailed assessment of non-fare box revenue streams for Chennai Metro Rail Limited (CMRL), evaluating commercial space utilisation and land value capture mechanisms.",
+        heading: "Revenue analysis",
+        body: "Quantified non-fare box revenue streams for Chennai Metro Rail Limited (CMRL), benchmarking commercial space utilisation and land value capture mechanisms across station assets.",
       },
       {
-        heading: "System specification",
-        body: "Designed functional requirements and workflow models for a software platform to automate vendor-based non-fare revenue collection and monitoring.",
+        heading: "Requirements design",
+        body: "Specified functional requirements and workflow models for a platform automating vendor-based non-fare revenue collection, tracking and reconciliation.",
       },
       {
-        heading: "Technical documentation",
-        body: "Mapped Chhattisgarh and Uttar Pradesh National Highways through GIS mapping for Asset Registration.",
+        heading: "Geospatial data",
+        body: "Mapped Chhattisgarh and Uttar Pradesh national highway stretches through GIS, standardising asset records for downstream registration and analysis.",
       },
     ],
     stack: ["Market sizing", "GIS mapping", "Requirements design", "Land value capture"],
@@ -126,27 +130,27 @@ export const projects = [
       "Deep learning for bleeding classification and segmentation in Wireless Capsule Endoscopy images.",
     // ← EDIT: paste the repo URL. Falls back to the GitHub profile if left as-is.
     repo: profile.github,
-    stack: ["Python", "TensorFlow", "Keras", "PyTorch"],
+    stack: ["Python", "PyTorch", "TensorFlow", "Keras"],
     metrics: [
       { value: "0.812", label: "Dice coefficient" },
       { value: "98.31%", label: "Classification accuracy" },
     ],
     detail: [
       {
-        heading: "Medical imaging models",
-        body: "Developed deep learning architectures including U-Net, ResNet-UNet and DMP-WCEBleedNet for bleeding classification and segmentation in Wireless Capsule Endoscopy images.",
+        heading: "Model development",
+        body: "Built and compared U-Net, ResNet-UNet and DMP-WCEBleedNet architectures for simultaneous bleeding classification and segmentation in Wireless Capsule Endoscopy imagery.",
       },
       {
-        heading: "High-performance results",
-        body: "Achieved peak performance using DMP-WCEBleedNet, with a Dice coefficient of 0.812 and classification accuracy of 98.31% on the test dataset.",
+        heading: "Results",
+        body: "Reached a Dice coefficient of 0.812 and 98.31% classification accuracy with DMP-WCEBleedNet, outperforming the U-Net baseline on the held-out test set.",
       },
       {
-        heading: "Multi-task learning",
-        body: "Built a PyTorch-based ResNet-UNet leveraging a pre-trained ResNet34 encoder for simultaneous bleeding classification and segmentation.",
+        heading: "Evaluation",
+        body: "Assessed models across Dice, IoU, Precision, Recall and F1 on a class-imbalanced dataset to ensure reliable, clinically meaningful performance.",
       },
       {
-        heading: "Comprehensive evaluation",
-        body: "Deployed DMP-WCEBleedNet with multi-metric assessment including Dice, IoU, Precision, Recall and F1-Score to ensure clinical-grade reliability.",
+        heading: "Research output",
+        body: "Published and presented a research paper on Wireless Capsule Endoscopy at ICNACT 2026.",
       },
     ],
     exhibits: [
@@ -158,61 +162,76 @@ export const projects = [
     ],
   },
   {
-    slug: "churnsense",
-    name: "ChurnSense",
-    domain: "Decision Intelligence",
+    slug: "teletrace",
+    name: "TeleTrace",
+    domain: "Data Engineering",
     blurb:
-      "A churn-risk and customer-lifetime-value platform that turns model output into targeted retention actions.",
+      "A five-stage ETL pipeline in pure Python and SQLite that generates, validates, cleans, loads and analyses call-centre records — with every rejected row kept alongside its failure reason.",
     repo: profile.github, // ← EDIT: paste the repo URL.
-    stack: ["Python", "XGBoost", "SMOTE", "SHAP", "Streamlit"],
+    stack: ["Python", "SQLite", "SQL"],
     metrics: [
-      { value: "3", label: "Ensembled models" },
-      { value: "SHAP", label: "Explainability layer" },
+      { value: "5", label: "Pipeline stages" },
+      { value: "500", label: "Records processed" },
     ],
     detail: [
       {
-        heading: "Customer retention",
-        body: "Proposed a decision intelligence platform for customer retention combining churn-risk assessment, customer lifetime value analysis, ROI optimisation and strategic segmentation to support targeted business interventions.",
+        heading: "Pipeline design",
+        body: "Built a five-stage ETL pipeline in pure Python and SQLite — generate, validate, clean, load and analyse — processing 500 synthetic call-centre records seeded with missing fields, duplicates and malformed timestamps. Every rejected record retained a failure reason alongside a run-level ingestion audit log.",
       },
       {
-        heading: "Machine learning",
-        body: "Implemented an ensemble churn prediction pipeline using Logistic Regression, Random Forest and XGBoost with SMOTE balancing and SHAP explainability, deployed through an interactive Streamlit dashboard for analytics and decision support.",
+        heading: "Modelling & analysis",
+        body: "Normalised timestamps to IST and derived duration, hour and weekend attributes with imputation explicitly flagged; loaded into an idempotent SQLite schema so re-runs never duplicated rows, and answered business questions in SQL using conditional aggregation with CSV report exports.",
       },
     ],
     exhibits: [
       {
-        src: "/exhibits/churnsense-1.svg",
-        caption: "Streamlit decision dashboard — churn risk and CLV segments",
-        source: "ChurnSense",
+        src: "/exhibits/teletrace-1.svg",
+        caption: "ETL pipeline run — ingestion audit log and rejected-record reasons",
+        source: "TeleTrace",
       },
     ],
   },
 ];
 
 export const skillGroups = [
-  { group: "Languages", items: ["Java", "Python", "SQL"] },
-  { group: "ML frameworks", items: ["TensorFlow", "Scikit-Learn", "Keras", "PyTorch"] },
-  { group: "Data & analytics", items: ["Pandas", "NumPy", "SHAP", "Matplotlib"] },
+  { group: "Querying & programming", items: ["SQL", "Python", "Java (Basics)"] },
   {
-    group: "Concepts",
-    items: ["Data Cleaning", "EDA", "Feature Engineering", "Ensemble Learning"],
+    group: "Analytics & BI",
+    items: [
+      "Power BI (DAX, star-schema modelling)",
+      "Oracle Analytics Cloud",
+      "Excel",
+      "Matplotlib",
+      "Streamlit",
+    ],
   },
   {
-    group: "Tools & software",
-    items: ["Git", "GitHub", "Jupyter Notebook", "VS Code", "Oracle BI", "n8n", "Power BI"],
+    group: "Data & ML libraries",
+    items: ["Pandas", "NumPy", "Scikit-Learn", "XGBoost", "TensorFlow", "PyTorch", "Keras"],
+  },
+  {
+    group: "Methods",
+    items: ["ETL", "Data Modelling", "Requirement Gathering", "Stakeholder Management"],
+  },
+  {
+    group: "Tools",
+    items: ["Git", "GitHub", "Jupyter Notebook", "VS Code", "Power Automate", "n8n"],
   },
 ];
 
 export const certifications = [
-  { name: "Microsoft Certified: Data Engineer Associate", issuer: "Microsoft", url: "" }, // ← EDIT: credential URL
+  { name: "Microsoft Certified: Fabric Data Engineer Associate", issuer: "Microsoft", url: "" }, // ← EDIT: credential URL
   { name: "Oracle Analytics Cloud Certified Professional", issuer: "Oracle", url: "" },
   {
-    name: "Inspect Rich Documents with Gemini Multimodality and Multimodal RAG",
-    issuer: "Google Skill Badge · Vertex AI",
+    name: "Applied Machine Learning in Python",
+    issuer: "University of Michigan · Coursera",
     url: "",
   },
-  { name: "Prompt Design in Vertex AI", issuer: "Google Skill Badge", url: "" },
-  { name: "Applied Machine Learning Specialization", issuer: "Coursera", url: "" },
+  {
+    name: "Research paper on Wireless Capsule Endoscopy",
+    issuer: "Presented at ICNACT 2026",
+    url: "",
+  },
 ];
 
 export const nav = [
