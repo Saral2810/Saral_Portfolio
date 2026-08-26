@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Reveal from "../components/Reveal";
-import { profile, experience, projects, skillGroups } from "../lib/data";
-
+import { profile, marquee, skillGroups } from "../lib/data";
 export default function About() {
   return (
     <div className="page">
@@ -71,59 +70,6 @@ export default function About() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="section">
-        <div className="section-head">
-          <p className="eyebrow">Experience</p>
-          <h2 className="display">Where the work has been</h2>
-        </div>
-        <div className="entries">
-          {experience.map((role) => (
-            <Link key={role.slug} href={`/experience/${role.slug}`} className="entry">
-              <div className="entry-side">
-                {role.span}
-                <br />
-                {role.location}
-              </div>
-              <div>
-                <h3 className="entry-title">{role.org}</h3>
-                <p className="entry-sub">
-                  {role.title} · {role.team}
-                </p>
-                <p className="entry-body">{role.summary}</p>
-              </div>
-              <div className="entry-go" aria-hidden="true">
-                →
-              </div>
-            </Link>
-          ))}
-        </div>
-      </Reveal>
-
-      <Reveal as="section" className="section">
-        <div className="section-head">
-          <p className="eyebrow">Projects</p>
-          <h2 className="display">Built on my own time</h2>
-        </div>
-        <div className="entries">
-          {projects.map((project) => (
-            <Link key={project.slug} href={`/projects/${project.slug}`} className="entry">
-              <div className="entry-side">
-                {project.domain}
-                <br />
-                {project.metrics[0].value} {project.metrics[0].label}
-              </div>
-              <div>
-                <h3 className="entry-title">{project.name}</h3>
-                <p className="entry-sub">{project.stack.join(" · ")}</p>
-                <p className="entry-body">{project.blurb}</p>
-              </div>
-              <div className="entry-go" aria-hidden="true">
-                →
-              </div>
-            </Link>
-          ))}
-        </div>
-      </Reveal>
-    </div>
+          </div>
   );
 }

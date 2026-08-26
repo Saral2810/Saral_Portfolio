@@ -8,7 +8,7 @@ export const profile = {
   role: "Data & Strategy",
   tagline:
     "Computer Science student at VIT Bhopal working where infrastructure policy meets data — PPP and data-centre feasibility at Deloitte, Power BI and DAX for public-sector reporting, and machine learning for medical imaging on my own time.",
-  location: "Gurugram / Delhi, India",
+  location: "Jaipur/ Rajasthan, India",
   email: "saralsinghal2810@gmail.com",
   phone: "+91 80009 38425",
   linkedin: "https://linkedin.com/in/saral-singhal",
@@ -16,7 +16,7 @@ export const profile = {
   resume: "/Saral_Singhal_Resume.pdf",
   // Photo for the About page. Drop a file in /public/ and update this path,
   // e.g. "/saral.jpg". Leave as-is to show a labelled placeholder.
-  photo: "/exhibits/portrait.svg", // ← EDIT: replace with your real photo
+  photo: "/exhibits/portrait.jpeg", // ← EDIT: replace with your real photo
   education: {
     school: "Vellore Institute of Technology",
     campus: "Bhopal, Madhya Pradesh",
@@ -62,18 +62,18 @@ export const experience = [
     // ← EDIT: drop images into /public/exhibits/ and update src + caption + source.
     exhibits: [
       {
-        src: "/exhibits/deloitte-1.svg",
-        caption: "Bid-compliance analytics dashboard, Power BI",
+        src: "/exhibits/deloitte-1.jpeg",
+        caption: "Strategy & Plan",
         source: "Deloitte, Strategy Risk & Transactions, 2026",
       },
       {
-        src: "/exhibits/deloitte-2.svg",
-        caption: "Tier III data-centre feasibility study — extract",
+        src: "/exhibits/deloitte-2.jpeg",
+        caption: "1st day of Joining",
         source: "Deloitte, 2026",
       },
       {
-        src: "/exhibits/deloitte-3.svg",
-        caption: "Internship confirmation",
+        src: "/exhibits/deloitte-3.jpeg",
+        caption: "Dashboard Analysis",
         source: "Deloitte, 2026",
       },
     ],
@@ -96,20 +96,16 @@ export const experience = [
     stack: ["Market sizing", "GIS mapping", "Requirements design", "Land value capture"],
     exhibits: [
       {
-        src: "/exhibits/ey-1.svg",
+        src: "/exhibits/ey-1.jpeg",
         caption: "CMRL non-fare revenue assessment — extract",
         source: "Ernst & Young, 2025",
       },
       {
-        src: "/exhibits/ey-2.svg",
-        caption: "National Highway asset mapping, Chhattisgarh & Uttar Pradesh",
+        src: "/exhibits/ey-2.jpeg",
+        caption: "1st day at EY",
         source: "Ernst & Young, 2025",
       },
-      {
-        src: "/exhibits/ey-3.svg",
-        caption: "Internship completion certificate",
-        source: "Ernst & Young, 2025",
-      },
+
     ],
   },
 ];
@@ -145,11 +141,31 @@ export const projects = [
         body: "Published and presented a research paper on Wireless Capsule Endoscopy at ICNACT 2026.",
       },
     ],
-    exhibits: [
+        exhibits: [
       {
-        src: "/exhibits/bleeddetectx-1.svg",
-        caption: "Segmentation output — predicted mask against ground truth",
+        src: "/exhibits/bleeddetectx-1.jpeg",
+        caption: "Bleeding Images",
         source: "BleedDetectX, DMP-WCEBleedNet",
+      },
+      {
+        src: "/exhibits/bleeddetectx-2.jpeg",
+        caption: "Bleeding and Non-Bleeding Images",
+        source: "BleedDetectX",
+      },
+      {
+        src: "/exhibits/bleeddetectx-3.jpeg",
+        caption: "Learning curves",
+        source: "BleedDetectX",
+      },
+      {
+        src: "/exhibits/bleeddetectx-4.jpeg",
+        caption: "Segmentation Confusion matrix",
+        source: "BleedDetectX",
+      },
+      {
+        src: "/exhibits/bleeddetectx-5.jpeg",
+        caption: "Training Curve",
+        source: "BleedDetectX",
       },
     ],
   },
@@ -175,13 +191,7 @@ export const projects = [
         body: "Normalised timestamps to IST and derived duration, hour and weekend attributes with imputation explicitly flagged; loaded into an idempotent SQLite schema so re-runs never duplicated rows, and answered business questions in SQL using conditional aggregation with CSV report exports.",
       },
     ],
-    exhibits: [
-      {
-        src: "/exhibits/teletrace-1.svg",
-        caption: "ETL pipeline run — ingestion audit log and rejected-record reasons",
-        source: "TeleTrace",
-      },
-    ],
+        exhibits: [],
   },
 ];
 
