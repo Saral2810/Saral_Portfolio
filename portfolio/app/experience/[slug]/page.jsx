@@ -12,10 +12,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const role = experience.find((r) => r.slug === slug);
   if (!role) return {};
-  return {
-    title: `${role.org} — Saral Singhal`,
-    description: role.summary,
-  };
+  return { title: `${role.org} — Saral Singhal`, description: role.summary };
 }
 
 export default async function ExperienceDetail({ params }) {
@@ -52,23 +49,26 @@ export default async function ExperienceDetail({ params }) {
       </Reveal>
 
       <Reveal as="section" className="section">
-        <div className="section-head">
-          <p className="eyebrow">What I did</p>
-        </div>
-        <div className="contribs">
-          {role.contributions.map((c) => (
-            <div className="contrib" key={c.heading}>
-              <h4>{c.heading}</h4>
-              <p>{c.body}</p>
-            </div>
-          ))}
+        <div className="tso">
+          <div className="tso-row">
+            <h4>The task</h4>
+            <p>{role.task}</p>
+          </div>
+          <div className="tso-row">
+            <h4>How I solved it</h4>
+            <p>{role.solution}</p>
+          </div>
+          <div className="tso-row">
+            <h4>The outcome</h4>
+            <p>{role.outcome}</p>
+          </div>
         </div>
       </Reveal>
 
       <Reveal as="section" className="section">
         <div className="section-head">
           <p className="eyebrow">Exhibits</p>
-          <h2 className="display">Evidence from the engagement</h2>
+          <h2 className="display">From the engagement</h2>
           <p className="lede" style={{ marginTop: 12 }}>
             Click any exhibit to enlarge. Client-confidential material is redacted or reconstructed.
           </p>
@@ -78,9 +78,9 @@ export default async function ExperienceDetail({ params }) {
 
       <Reveal as="section" className="section">
         <div className="hero-actions" style={{ marginTop: 0 }}>
-          <a className="btn" href={`mailto:${profile.email}`}>
+          <Link className="btn" href="/contact">
             Ask me about this work
-          </a>
+          </Link>
           <a className="btn is-ghost" href={profile.linkedin} target="_blank" rel="noreferrer">
             Verify on LinkedIn
           </a>

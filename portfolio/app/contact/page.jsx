@@ -1,5 +1,6 @@
 import Reveal from "../../components/Reveal";
 import RevealPhone from "../../components/RevealPhone";
+import EmailActions from "../../components/EmailActions";
 import { profile } from "../../lib/data";
 
 export const metadata = {
@@ -7,25 +8,18 @@ export const metadata = {
   description: "Email, phone, LinkedIn, GitHub and résumé download.",
 };
 
-const SUBJECT = encodeURIComponent("Opportunity — Saral Singhal");
-
 export default function ContactPage() {
   return (
     <div className="page">
       <Reveal as="header" className="section-head">
-        <p className="eyebrow">04 — Contact</p>
+        <p className="eyebrow">Contact</p>
         <h1 className="display">Get in touch</h1>
         <p className="lede" style={{ marginTop: 14 }}>
-          Email is fastest — I read everything and reply within a day. Happy to walk through any of
-          the exhibits on this site, or send the underlying work where it isn&apos;t confidential.
+          The fastest way to reach me is email — I reply within a day. Copy the address, or open a
+          pre-filled Gmail message.
         </p>
-        <div className="hero-actions">
-          <a className="btn" href={`mailto:${profile.email}?subject=${SUBJECT}`}>
-            Write to me
-          </a>
-          <a className="btn is-ghost" href={profile.resume} download>
-            Download résumé
-          </a>
+        <div style={{ marginTop: 24 }}>
+          <EmailActions />
         </div>
       </Reveal>
 
@@ -33,9 +27,7 @@ export default function ContactPage() {
         <dl className="contact-list">
           <div className="contact-row">
             <dt>Email</dt>
-            <dd>
-              <a href={`mailto:${profile.email}?subject=${SUBJECT}`}>{profile.email}</a>
-            </dd>
+            <dd>{profile.email}</dd>
           </div>
           <div className="contact-row">
             <dt>Phone</dt>
@@ -56,6 +48,14 @@ export default function ContactPage() {
             <dd>
               <a href={profile.github} target="_blank" rel="noreferrer">
                 github.com/Saral2810
+              </a>
+            </dd>
+          </div>
+          <div className="contact-row">
+            <dt>Résumé</dt>
+            <dd>
+              <a href={profile.resume} download>
+                Download PDF ↓
               </a>
             </dd>
           </div>

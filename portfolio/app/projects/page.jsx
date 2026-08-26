@@ -1,26 +1,38 @@
 import Reveal from "../../components/Reveal";
 import ProjectIndex from "../../components/ProjectIndex";
+import GithubRepos from "../../components/GithubRepos";
 import { projects } from "../../lib/data";
 
 export const metadata = {
   title: "Projects — Saral Singhal",
-  description: "Machine learning and decision-intelligence projects, with source on GitHub.",
+  description: "Featured machine-learning and data-engineering projects, plus all public repositories.",
 };
 
 export default function ProjectsPage() {
   return (
     <div className="page">
       <Reveal as="header" className="section-head">
-        <p className="eyebrow">02 — Projects</p>
+        <p className="eyebrow">Projects</p>
         <h1 className="display">Projects</h1>
         <p className="lede" style={{ marginTop: 14 }}>
-          Two builds carried past the notebook stage: one clinical computer-vision system, one
-          retention platform. Source is on GitHub; each page carries the metrics that matter.
+          A couple of builds carried past the notebook stage. Each links to its source on GitHub, and
+          everything else public is listed further down.
         </p>
       </Reveal>
 
       <Reveal>
         <ProjectIndex projects={projects} />
+      </Reveal>
+
+      <Reveal as="section" className="section">
+        <div className="section-head">
+          <p className="eyebrow">More on GitHub</p>
+          <h2 className="display">All public repositories</h2>
+          <p className="lede" style={{ marginTop: 12 }}>
+            Pulled live from GitHub — newest first.
+          </p>
+        </div>
+        <GithubRepos />
       </Reveal>
     </div>
   );

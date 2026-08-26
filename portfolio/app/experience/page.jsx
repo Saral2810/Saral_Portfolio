@@ -11,11 +11,11 @@ export default function ExperienceIndex() {
   return (
     <div className="page">
       <Reveal as="header" className="section-head">
-        <p className="eyebrow">01 — Experience</p>
+        <p className="eyebrow">Experience</p>
         <h1 className="display">Engagements</h1>
         <p className="lede" style={{ marginTop: 14 }}>
-          Two consulting internships, both in infrastructure and public-sector advisory. Open either
-          one for the deliverables, filed as captioned exhibits with sources.
+          Two consulting internships in infrastructure and public-sector advisory. Open either for the
+          full story — the task, how I solved it, and what came of it.
         </p>
       </Reveal>
 

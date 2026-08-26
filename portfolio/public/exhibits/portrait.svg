@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="800" viewBox="0 0 640 800" role="img" aria-label="Portrait placeholder">
+  <rect width="640" height="800" fill="#f2f0ec"/>
+  <rect x="0.5" y="0.5" width="639" height="799" fill="none" stroke="#dcd9d3"/>
+  <circle cx="320" cy="320" r="120" fill="none" stroke="#dcd9d3" stroke-width="2"/>
+  <circle cx="320" cy="285" r="52" fill="#dcd9d3"/>
+  <path d="M210 470 q110 -140 220 0" fill="#dcd9d3"/>
+  <text x="320" y="600" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" letter-spacing="2.5" fill="#7a2e35">YOUR PHOTO</text>
+  <text x="320" y="632" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#545a63">Replace /public/exhibits/portrait.svg</text>
+  <text x="320" y="652" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#545a63">or set profile.photo in lib/data.js</text>
+</svg>
