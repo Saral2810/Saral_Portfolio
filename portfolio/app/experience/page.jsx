@@ -4,7 +4,7 @@ import { experience } from "../../lib/data";
 
 export const metadata = {
   title: "Experience — Saral Singhal",
-  description: "Consulting internships at Deloitte and Ernst & Young.",
+  description: "AI engineering at Predixion AI, and data and analytics internships at Deloitte and Ernst & Young.",
 };
 
 export default function ExperienceIndex() {
@@ -14,8 +14,9 @@ export default function ExperienceIndex() {
         <p className="eyebrow">Experience</p>
         <h1 className="display">Engagements</h1>
         <p className="lede" style={{ marginTop: 14 }}>
-          Two consulting internships in infrastructure and public-sector advisory. Open either for the
-          full story — the task, how I solved it, and what came of it.
+          Building a live AI voice platform at Predixion AI, after data and analytics internships at
+          Deloitte and EY. Open any entry for the full story — the task, how it was solved, and what came
+          of it.
         </p>
       </Reveal>
 

@@ -65,16 +65,18 @@ export default async function ExperienceDetail({ params }) {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="section">
-        <div className="section-head">
-          <p className="eyebrow">Exhibits</p>
-          <h2 className="display">From the engagement</h2>
-          <p className="lede" style={{ marginTop: 12 }}>
-            Click any exhibit to enlarge. Client-confidential material is redacted or reconstructed.
-          </p>
-        </div>
-        <ExhibitGallery exhibits={role.exhibits} prefix={String(index)} />
-      </Reveal>
+      {role.exhibits.length > 0 ? (
+        <Reveal as="section" className="section">
+          <div className="section-head">
+            <p className="eyebrow">Exhibits</p>
+            <h2 className="display">From the engagement</h2>
+            <p className="lede" style={{ marginTop: 12 }}>
+              Click any exhibit to enlarge. Client-confidential material is redacted or reconstructed.
+            </p>
+          </div>
+          <ExhibitGallery exhibits={role.exhibits} prefix={String(index)} />
+        </Reveal>
+      ) : null}
 
       <Reveal as="section" className="section">
         <div className="hero-actions" style={{ marginTop: 0 }}>
