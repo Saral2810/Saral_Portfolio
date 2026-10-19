@@ -239,6 +239,34 @@ h3.display { font-size: 21px; }
 
 .figure small { color: var(--graphite); font-size: 13px; line-height: 1.45; display: block; }
 
+/* ── Project pipeline (numbered stages) ──────────────────────────────────── */
+.pipeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.pipeline li {
+  border: 1px solid var(--rule);
+  background: var(--paper-2);
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.pipeline li i {
+  display: block;
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+  margin-bottom: 6px;
+}
+
 /* ── Section ─────────────────────────────────────────────────────────────── */
 .section { margin-top: 72px; }
 .section-head { margin-bottom: 28px; }

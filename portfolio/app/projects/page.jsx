@@ -5,7 +5,7 @@ import { projects } from "../../lib/data";
 
 export const metadata = {
   title: "Projects — Saral Singhal",
-  description: "Featured machine-learning and data-engineering projects, plus all public repositories.",
+  description: "Generative AI, computer vision, machine learning and data engineering projects, plus all public repositories.",
 };
 
 export default function ProjectsPage() {
@@ -15,8 +15,8 @@ export default function ProjectsPage() {
         <p className="eyebrow">Projects</p>
         <h1 className="display">Projects</h1>
         <p className="lede" style={{ marginTop: 14 }}>
-          A couple of builds carried past the notebook stage. Each links to its source on GitHub, and
-          everything else public is listed further down.
+          End-to-end builds, from raw data to a working model or tool. Each one says what I did, the
+          problem, the result, and how the pipeline works. Everything else public is listed further down.
         </p>
       </Reveal>
 

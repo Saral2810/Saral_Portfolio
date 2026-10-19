@@ -17,6 +17,7 @@ export default function About() {
             <p className="lede" style={{ marginTop: 14 }}>
               {profile.tagline}
             </p>
+            <p style={{ marginTop: 12, color: "var(--graphite)" }}>{profile.intro}</p>
             <div className="hero-meta">
               <span>{profile.education.degree}</span>
               <span>
@@ -31,10 +32,23 @@ export default function About() {
           <a className="btn" href={profile.resume} download>
             Download résumé
           </a>
+          <Link className="btn is-ghost" href="/projects">
+            See projects
+          </Link>
           <Link className="btn is-ghost" href="/contact">
             Get in touch
           </Link>
         </div>
+      </Reveal>
+
+      <Reveal as="section" className="figures">
+        {marquee.map((m) => (
+          <div className="figure" key={m.label}>
+            <b>{m.value}</b>
+            <em>{m.label}</em>
+            <small>{m.note}</small>
+          </div>
+        ))}
       </Reveal>
 
       <Reveal as="section" className="section prose">
@@ -47,7 +61,7 @@ export default function About() {
 
       <Reveal as="section" className="section">
         <div className="vision">
-          <p className="eyebrow">Vision for age 40</p>
+          <p className="eyebrow">What I want to build</p>
           <p className="vision-text">{profile.vision}</p>
         </div>
       </Reveal>

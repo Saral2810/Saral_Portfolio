@@ -3,7 +3,7 @@ import { Rail, TopBar } from "../components/Nav";
 import { profile } from "../lib/data";
 
 export const metadata = {
-  title: "Saral Singhal — Strategy & Data Science",
+  title: "Saral Singhal — Data & AI Engineer",
   description: profile.tagline,
 };
 

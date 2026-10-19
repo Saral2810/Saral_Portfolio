@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function Reveal({ children, delay = 0, as: Tag = "div", className = "" }) {
+export default function Reveal({ children, delay = 0, as: Tag = "div", className = "", id }) {
   const ref = useRef(null);
   const [shown, setShown] = useState(false);
 
@@ -32,6 +32,7 @@ export default function Reveal({ children, delay = 0, as: Tag = "div", className
   return (
     <Tag
       ref={ref}
+      id={id}
       className={"reveal " + (shown ? "is-in " : "") + className}
       style={{ transitionDelay: shown ? `${delay}ms` : "0ms" }}
     >

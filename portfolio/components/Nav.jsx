@@ -16,7 +16,7 @@ export function Rail() {
     <nav className="rail" aria-label="Sections">
       <Link href="/" className="rail-mark">
         Saral Singhal
-        <span>Data &amp; Strategy</span>
+        <span>{profile.role}</span>
       </Link>
 
       <div className="rail-nav">
